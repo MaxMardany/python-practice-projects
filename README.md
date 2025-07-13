@@ -1,35 +1,24 @@
-# Python Practice Projects 🐍
+# Python Practice Projects
 
-This repository contains Python exercises, projects, and learning material from my journey through freeCodeCamp, documentation study, and hands-on practice.
+This repository contains my beginner-to-intermediate level Python projects as I complete the freeCodeCamp [Scientific Computing with Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/) certification.
 
-## 📁 Folder Structure
+These exercises are helping me build fluency in logic, problem-solving, and scripting as I transition into robotics, automation, and technical systems support roles.
 
+## 🧠 Skills Practiced
 
-## ✅ What You'll Find Here
+- Function building and error handling
+- String manipulation and formatting
+- Logic and conditionals
+- Step-by-step problem solving
 
-- 📘 **Fundamentals**: Variables, strings, conditionals, loops, and functions
-- 🔁 **Control Flow**: if/else, for/while loops, try/except
-- 🧠 **Data Structures**: Lists, dictionaries, sets, tuples
-- 🧪 **Projects**: Small scripts or tools to solve real-world problems
-- 🧰 **Practice Exercises**: My step-by-step Python solutions from freeCodeCamp and other platforms
+## 🔧 Featured Projects
 
-## 🚀 Why I Built This
+- `arithmetic_formatter.py` — Formats arithmetic problems vertically with strict input validation (FreeCodeCamp project)
+- `lambda_expense_tracker.py` — Practice using lambda functions and list filtering
+- More coming soon as I progress through the course!
 
-I'm learning Python with the goal of applying it to:
-- Automation & scripting
-- DevOps & Cloud Engineering
-- Robotics & Smart Factory systems
-- Long-term software development goals
+## 📄 Resume
 
-## 🛠 Technologies Used
+📎 [View My Resume (PDF)](MaximilianMardany_Resume.pdf)
 
-- Python 3.x
-- VS Code for development
-- Git & GitHub for version control
-
-## 📌 Notes
-
-Some scripts may be simple or incomplete — this is a living workspace meant to grow as I learn.
-
----
 
