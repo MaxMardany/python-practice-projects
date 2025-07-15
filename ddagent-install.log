@@ -1,0 +1,76 @@
+[34m
+* Datadog Agent 7 install script v1.39.0
+[0m
+/usr/bin/systemctl
+[34m
+* Installing curl gnupg
+[0m
+Hit:1 http://us.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:5 https://esm.ubuntu.com/apps/ubuntu noble-apps-security InRelease [7,613 B]
+Ign:6 https://apt.datadoghq.com stable InRelease
+Get:7 https://esm.ubuntu.com/apps/ubuntu noble-apps-updates InRelease [7,480 B]
+Hit:8 https://apt.datadoghq.com stable Release
+Get:10 https://esm.ubuntu.com/infra/ubuntu noble-infra-security InRelease [7,474 B]
+Get:11 https://esm.ubuntu.com/infra/ubuntu noble-infra-updates InRelease [7,473 B]
+Get:12 https://esm.ubuntu.com/apps/ubuntu noble-apps-security/main amd64 Packages [223 kB]
+Fetched 253 kB in 2s (137 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.6).
+gnupg is already the newest version (2.4.4-2ubuntu17.3).
+0 upgraded, 0 newly installed, 0 to remove and 40 not upgraded.
+[34m
+* Installing APT package sources for Datadog
+[0m
+gpg: key E6266D4AC0962C7D: "Datadog, Inc. APT key (2023-04-20) (APT key) <package+aptkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+gpg: key 0D826EB906462314: "Datadog, Inc. APT key (2024-05-15) (APT key) <package+aptkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+gpg: key E6266D4AC0962C7D: "Datadog, Inc. APT key (2023-04-20) (APT key) <package+aptkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+gpg: key 32637D44F14F620E: "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+gpg: key D3A80E30382E94DE: "Datadog, Inc <package@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+Ign:1 https://apt.datadoghq.com stable InRelease
+Hit:2 https://apt.datadoghq.com stable Release
+Reading package lists...
+  [33mInstalling package(s): datadog-agent datadog-signing-keys
+[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+datadog-agent is already the newest version (1:7.68.0-1).
+datadog-signing-keys is already the newest version (1:1.4.0-1).
+0 upgraded, 0 newly installed, 0 to remove and 40 not upgraded.
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
+[34m
+* Keeping old /etc/datadog-agent/datadog.yaml configuration file
+[0m
+/usr/bin/systemctl
+[34m* Starting the Datadog Agent...
+[0m
+[32m  Your Datadog Agent is running and functioning properly.
+[0m[32m  It will continue to run in the background and submit metrics to Datadog.
+[0m[32m  If you ever want to stop the Datadog Agent, run:
+
+      sudo systemctl stop datadog-agent
+
+  And to run it again run:
+
+      sudo systemctl start datadog-agent[0m
+
+[32m  Consider adding dd-agent to the docker group to enable the docker support, run:
+
+      sudo usermod -a -G docker dd-agent[0m
+
